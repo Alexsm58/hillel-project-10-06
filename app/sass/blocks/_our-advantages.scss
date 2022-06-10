@@ -1,0 +1,76 @@
+.our-advantages {
+   &__box{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $blue;
+      padding-bottom: 2px;
+      &::after {
+         content: url(../img/arrow.svg);
+         margin-left: 6px;
+      }
+      &:hover {
+         border-bottom: 2px solid  $blue;
+         padding-bottom: 0;
+      }
+   }
+   &__title{
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      background: linear-gradient(90.13deg, $red 0.84%, $orange 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+   }
+   &__items {
+      display: grid;
+   }
+   &__item {
+      margin-bottom: 30px;
+   }
+   &__svg {
+      width: 78px;
+      height: 78px;
+      background-color: $white;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+   }
+   &__text {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+      color: $blue;
+      margin-bottom: 15px;
+   }
+   &__content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: $white;
+   }
+   @media screen and (min-width: 768px) {
+      &__items {
+         grid-template-columns: 1fr 1fr ;
+         grid-template-rows: min-content min-content min-content;
+      }
+      &__items {
+         column-gap: 60px;
+      }
+      &__item {
+         margin-bottom: 60px;
+      }
+   }
+      @media screen and (min-width: 992px) {
+         &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: min-content min-content;
+         }
+   }
+}

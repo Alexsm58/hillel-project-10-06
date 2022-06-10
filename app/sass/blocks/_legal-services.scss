@@ -1,0 +1,114 @@
+.legal-services {
+   margin-top: 40px;
+   margin-bottom: 30px;
+   &__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      background: $red-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 28px;
+   }
+   &__text {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 30px;
+      color: $dark-black;
+      margin-bottom: 36px;
+   }
+   &__text--last {
+      margin-bottom: 36px;
+   }
+   &__progress {
+      border-left: 4px solid $grey-separator;
+      padding-left: 30px;
+   }
+   &__svg-experience {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      background: $red-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      padding-left:40px ;
+      position: relative;
+      text-fill-color: transparent;
+      margin-bottom: 10px;
+      &::before {
+         content: url(../img/experience.svg);
+         position: absolute;
+         top:3px;
+         left: 0px;
+      }
+   }
+   &__content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $main;
+      margin-bottom: 40px;
+   }
+   &__svg-clients {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      background: $red-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      padding-left:40px ;
+      position: relative;
+      text-fill-color: transparent;
+      margin-bottom: 10px;
+      &::before {
+         content: url(../img/clients.svg);
+         position: absolute;
+         top:3px;
+         left: 0px;
+      }
+   }
+   &__svg-awards {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      background: $red-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      padding-left:40px ;
+      position: relative;
+      text-fill-color: transparent;
+      margin-bottom: 10px;
+      &::before {
+         content: url(../img/awards.svg);
+         position: absolute;
+         top:3px;
+         left: 0px;
+      }
+   }
+   @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+      &__about {
+         width: 60%;
+         margin-right: 30px;
+      }
+      &__title {
+         font-size: 38px;
+         line-height: 46px;
+      }
+      &__text {
+         margin-right: 30px;
+      }
+      &__progress {
+         width: 40%;
+      }
+      &__progress *:last-child {
+         margin: 0;
+      }
+   }
+}

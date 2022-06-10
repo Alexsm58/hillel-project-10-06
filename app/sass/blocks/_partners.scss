@@ -1,0 +1,100 @@
+.partners {
+   &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $main;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+   &__parent {
+      display: flex;
+      flex-direction: column;
+   }
+   &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 120px;
+   }
+   &__item--blue {
+      background: $blue-img;
+   }
+   &__item--dark {
+      background: $dark-img;
+   }
+   &__item--orange-dark {
+      background: $orange-dark-img;
+   }
+   &__item--violet {
+      background: $violet-img;
+   }
+   &__item--orange {
+      background: $orange-img;
+   }
+   &__item--grey {
+      background: $gre-img;
+   }
+   &__item--blood-red{
+      background: $blood-red-img;
+      display: none;
+   }
+   &__item--turquoise {
+      background: $turquoise-img;
+      display: none;
+   }
+   &__item--peach {
+      background: $peach-img;
+      display: none;
+   }
+   &__item--eggplant {
+      background: $eggplant-img;
+      display: none;
+   }
+   &__item--skyey {
+      background: #1D4568;
+      display: none;
+   }
+   &__item--dark-black {
+      background: #000000;
+      display: none;
+   }
+   &__hillel {
+      align-self: center;
+   }
+   @media screen and (min-width: 768px) {
+   &__item--blood-red{
+         display: flex;
+      }
+   &__item--turquoise {
+         display: flex;
+      }
+   &__item--peach {
+         display: flex;
+      }
+   &__item--eggplant {
+         display: flex;
+      }
+   &__item--skyey {
+         display: flex;
+      }
+   &__item--dark-black {
+         display: flex;
+      }
+   &__parent {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   &__item {
+      width: 33.333%;
+   }
+   }
+   @media screen and (min-width: 992px) {
+   &__item {
+      width: 25%;
+   }
+   }
+}

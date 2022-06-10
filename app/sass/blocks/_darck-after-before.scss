@@ -1,0 +1,17 @@
+.darck-after-before{
+   background: $grey-after;
+   border-radius: 0 0 12px 12px;
+   height: 10px;
+   margin: 0 20px 0 20px;
+   position: relative;
+   &::after {
+      content: '';
+      background: $ice;
+      border-radius: 0 0 12px 12px;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: -10px;
+      height: 10px;
+   }
+}

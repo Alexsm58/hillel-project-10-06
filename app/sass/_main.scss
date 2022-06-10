@@ -1,0 +1,62 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+.body {
+   font-family: 'Montserrat', 'Arial', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+}
+.visuall-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: o;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+.img-responsive {
+   max-width: 100%;
+   height: auto;
+}
+.container {
+   max-width: 1330px;
+   min-width: 375px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.container--l{
+   max-width: 1360px;
+   padding: 0 30px;
+}
+.color-bg-darck {
+   background: $background-dark;
+   border-radius: 0px 0px 12px 12px;
+   background-color: transparent;
+}
+.bg-h {
+	background-image: url(../img/symbol-h.png);
+   background-repeat: no-repeat;
+   background-position: top, center;
+   background-color: transparent;
+}
+.color-bg-gray {
+   background: $grey-bg;
+}
+.color-bg-white {
+   background: $white;
+}
+@media screen and (min-width: 768px) {
+   .container--xl {
+      max-width: 1390px;
+      padding: 0 60px;
+   }
+   @media screen and (min-width: 1440px) {
+   .container--xxl {
+      max-width: 1630px;
+      padding: 0 180px;
+   }
+}
+}

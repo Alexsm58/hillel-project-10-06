@@ -1,0 +1,122 @@
+.achievements {
+   padding-top: 30px;
+   padding-bottom: 30px;
+   &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $main;   
+      margin-bottom: 30px;
+   }
+   &__item { 
+      height: 90px;
+      border-radius: 12px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $white;
+      margin: 0 20px;
+   }
+   &__item--min {
+      display: none;
+   }
+   &__item-legal-500 {
+      background-image: url(../img/legal-500-mobile.png);
+      background-repeat: no-repeat;
+      width: 53px;
+      height: 40px;
+   }
+   &__item-legal-services {
+      background-image: url(../img/legal-services-mobile.png);
+      background-repeat: no-repeat;
+      width: 106px;
+      height: 40px;
+   }
+   &__item-market-leader {
+      background-image: url(../img/market-leader-mobile.png);
+      background-repeat: no-repeat;
+      width: 130px;
+      height: 40px;
+   }
+   &__item-ulf-2017 {
+      background-image: url(../img/ulf-2017-mobile.png);
+      background-repeat: no-repeat;
+      width: 110px;
+      height: 40px;
+   }
+   &__btn{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+   }
+   &__dots-btn {
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      border: none;
+      border-radius: 50%;
+      margin: 0 15px;
+      background-color: $blue;
+      opacity: 0.2;
+      &:not(.team__dots-btn--active):hover {
+         background: $blue-hover;
+         opacity: 10;
+      }
+   }
+   &__dots-btn--active {
+      background: $blue;
+         opacity: 10;
+   }
+   @media screen and (min-width: 768px) {
+      &__items {
+         display: flex;
+      }
+      &__item {
+         width: 25%;
+      }
+      
+      &__item--min {
+         display: flex;
+      }
+      &__dots--min {
+         display: none;
+      }
+      @media screen and (min-width: 992px) {
+
+         &__item {
+            height: 110px;
+         }
+
+         &__item-legal-500 {
+            background-image: url(../img/legal-500.png);
+            background-repeat: no-repeat;
+            width: 80px;
+            height: 60px;
+         }
+         &__item-legal-services {
+            background-image: url(../img/legal-services.png);
+            background-repeat: no-repeat;
+            width: 159px;
+            height: 60px;
+         }
+         &__item-market-leader {
+            background-image: url(../img/market-leader.png);
+            background-repeat: no-repeat;
+            width: 195px;
+            height: 60px;
+         }
+         &__item-ulf-2017 {
+            background-image: url(../img/ulf-2017.png);
+            background-repeat: no-repeat;
+            width: 166px;
+            height: 60px;
+         }
+      }
+}
+}
